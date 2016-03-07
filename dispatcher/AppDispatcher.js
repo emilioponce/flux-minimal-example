@@ -2,29 +2,29 @@ var Dispatcher = require('flux').Dispatcher;
 var AppDispatcher = new Dispatcher();
 var Store = require('../stores/Store');
 
-// Register callback with AppDispatcher
-module.exports = AppDispatcher.register(
+// Register callback with AppDispatcher. Dispatcher is used to broadcast payloads to registered callbacks.
+AppDispatcher.register((payload) => {
 
-  function(payload){
+  let action = payload.action;
+  let new_item = payload.new_item;
+  let id = payload.id;
 
-    var action = payload.action;
-    var new_item = payload.new_item;
-    var id = payload.id;
+  switch(action) {
 
-    switch(action) {
+    // Respond to add-item action
+    case 'add-item':
+    Store.addItem(new_item);
+    break;
 
-      // Respond to add-item action
-      case 'add-item':
-        Store.addItem(new_item);
-      break;
-
-      default:
-      return true;
-    }
-
-    // If action was responded to, emit change event
-    Store.emitChange();
-
+    default:
     return true;
+  }
 
-  });
+  // If action was responded to, emit change event
+  Store.emitChange();
+
+  return true;
+
+});
+
+export default AppDispatcher;
