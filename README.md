@@ -1,16 +1,16 @@
-# flux-minimal-example
+## FLUX MINIMAL EXAMPLE
 
 ### FLUX super-basic example with React and Gulp
 
-This educational project tries to be an *starting point* to a project using FLUX application architecture. It defines a scaffolding to quickly set up an skeleton for your application.
+This educational project tries to be an **starting point** to a project using FLUX application architecture. It defines a scaffolding to quickly set up an skeleton for your application.
 
-It only generates a list with two items, and a button to add new items.
+It only generates a list with two items, and a button to add new items to this list.
 
-Javascript package manager (npm) was used for dependencies, combined with Gulp, that was used as a build system and task manager.
+Javascript package manager (npm) was used for dependencies, and Gulp was used as a build system and task manager.
 
 ---
 
-#### Installation
+### Installation
 
 In a web application server like Apache:
 ```shell
