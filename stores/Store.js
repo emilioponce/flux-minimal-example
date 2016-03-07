@@ -13,6 +13,7 @@ module.exports = _.extend({}, EventEmitter.prototype, {
       name: 'Item 2'
     }
   ],
+
   getItems: function(){
     return this.items;
   },

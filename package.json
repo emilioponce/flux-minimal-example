@@ -13,7 +13,11 @@
   "keywords": [
     "react",
     "flux",
-    "gulp"
+    "gulp",
+    "dispatcher",
+    "store",
+    "action",
+    "component"
   ],
   "author": "Emilio Ponce",
   "license": "ISC",

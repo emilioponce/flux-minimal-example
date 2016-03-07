@@ -2,11 +2,11 @@ var React = require('react');
 var AppDispatcher = require('../dispatcher/AppDispatcher');
 
 module.exports = React.createClass({
+  
+  _createItem: function(event){
 
-  createItem: function(e){
-
-    // so we don't reload the page
-    e.preventDefault();
+    // prevent to reload the page
+    event.preventDefault();
 
     AppDispatcher.dispatch({
       action: 'add-item',
@@ -16,9 +16,11 @@ module.exports = React.createClass({
       }
     });
   },
+
   render: function(){
-    return <form onSubmit={ this.createItem.bind(this) }>
+    return <form onSubmit={this._createItem}>
       <button>Add new item</button>
     </form>;
   }
+
 });

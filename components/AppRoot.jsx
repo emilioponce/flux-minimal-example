@@ -3,37 +3,36 @@ var Store = require('../stores/Store');
 var AppDispatcher = require('../dispatcher/AppDispatcher');
 var NewItemButton = require('./NewItemButton');
 
-// Method to retrieve state from Stores
-let getListState = () => {
-  return {
-    items: Store.getItems()
-  };
-}
+module.exports = React.createClass({
 
-class AppRoot extends React.Component {
+  // Method to retrieve state from Stores
+  getListState: function() {
+    return {
+      items: Store.getItems()
+    };
+  },
 
-  // Method to setState based upon Store changes
-  _onChange() {
-    this.setState(getListState());
-  }
+  // Method to set internal react states based on Store changes
+  _onChange: function() {
+    this.setState(this.getListState());
+  },
 
   // Add change listener to store
-  componentDidMount() {
-    Store.addChangeListener(this._onChange.bind(this));
-  }
+  componentDidMount: function() {
+    Store.addChangeListener(this._onChange);
+  },
 
-  render(){
+  render: function(){
     var items = Store.getItems();
-    // returning one div with item name for every array position
     var itemsHtml = items.map(
       function(item){
         return <li key={ item.id }>{ item.name }</li>;
         });
+        // returning one div with item name for every array position
         return <div>
           <ul>{itemsHtml}</ul>
           <NewItemButton/>
         </div>;
       }
-    }
 
-    export default AppRoot;
+    });
