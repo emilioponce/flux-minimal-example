@@ -2,11 +2,11 @@
 
 ### FLUX super-basic example with React and Gulp
 
-This educational project tries to be an **starting point** to a project using FLUX application architecture. It defines a scaffolding to quickly set up an skeleton for your application.
+This educational project tries to be a  **starting point** to a project using FLUX application architecture. It defines a scaffolding to quickly set up an skeleton for your application.
 
 It only generates a list with two items, and a button to add new items to this list.
 
-Javascript package manager (npm) was used for dependencies, and Gulp was used as a build system and task manager.
+A javascript package manager (npm) was used for working with dependencies, and Gulp was selected as a build system & task manager.
 
 ---
 
