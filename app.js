@@ -1,6 +1,6 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-var AppRoot = require('./components/AppRoot');
+var AppRoot = require('./components/appRoot');
 const log = require('logatim');
 
 // setting root level

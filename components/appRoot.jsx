@@ -1,7 +1,7 @@
 var React = require('react');
-var Store = require('../stores/Store');
-var AppDispatcher = require('../dispatcher/AppDispatcher');
-var NewItemButton = require('./NewItemButton');
+var Store = require('../stores/store');
+var AppDispatcher = require('../dispatcher/appDispatcher');
+var NewItemButton = require('./newItemButton');
 
 module.exports = React.createClass({
 

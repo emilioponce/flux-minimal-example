@@ -1,5 +1,5 @@
 var React = require('react');
-var ItemsActions = require('../actions/ItemsActions');
+var ItemsActions = require('../actions/itemsActions');
 
 module.exports = React.createClass({
 
