@@ -35,4 +35,6 @@ gulp.task('watch', function () {
   gulp.watch("./components/*.jsx", ['default']);
   gulp.watch("./dispatcher/*.js", ['default']);
   gulp.watch("./stores/*.js", ['default']);
+  gulp.watch("./actions/*.js", ['default']);
+  gulp.watch("./constants/*.js", ['default']);
 });

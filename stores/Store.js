@@ -23,12 +23,12 @@ module.exports = _.extend({}, EventEmitter.prototype, {
     this.items.push(new_item);
   },
 
-  // Emit Change event (_onChange) to AppRoot in order to render new state
+  // Emit Change event (_onChange) recieved by AppRoot component, in order to render new state
   emitChange: function(){
     this.emit('change');
   },
 
-  // Add change listener
+  // Add change listener (listening event change from the Dispatcher)
   addChangeListener: function(callback){
     this.on('change', callback);
   }

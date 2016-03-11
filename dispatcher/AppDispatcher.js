@@ -1,6 +1,8 @@
 var Dispatcher = require('flux').Dispatcher;
-var AppDispatcher = new Dispatcher();
 var Store = require('../stores/Store');
+var appConstants = require('../constants/appConstants');
+
+var AppDispatcher = new Dispatcher();
 
 // Dispatcher is used to broadcast payloads to registered stores callbacks.
 AppDispatcher.register(function(payload) {
@@ -9,9 +11,9 @@ AppDispatcher.register(function(payload) {
   let new_item = payload.new_item;
 
   switch(action) {
-    case 'add-item':
+    case appConstants.ADD_ITEM:
       Store.addItem(new_item);
-    break;
+      break;
     default:
       return true;
   }
