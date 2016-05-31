@@ -4,7 +4,7 @@
 
 This educational project tries to be a  **starting point** to a project using FLUX application architecture. It defines a scaffolding to quickly set up an skeleton for your application.
 
-It only generates a list with two items, and a button to add new items to this list.
+It only generates a list with two items, and two buttons to add and remove items from the list.
 
 A javascript package manager (npm) was used for working with dependencies, and Gulp was selected as a build system & task manager.
 
