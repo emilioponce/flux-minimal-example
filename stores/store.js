@@ -23,6 +23,11 @@ module.exports = _.extend({}, EventEmitter.prototype, {
     this.items.push(new_item);
   },
 
+  // Remove last element
+  removeItem: function(){
+    this.items.pop();
+  },
+
   // Emit Change event (_onChange) recieved by AppRoot component, in order to render new state
   emitChange: function(){
     this.emit('change');

@@ -11,5 +11,11 @@ module.exports = {
         name: 'New Item'
       }
     });
+  },
+  removeItem: function(){
+    // triggers add-item action when user clics button
+    AppDispatcher.dispatch({
+      action: appConstants.REMOVE_ITEM
+    });
   }
 };

@@ -8,11 +8,14 @@ var AppDispatcher = new Dispatcher();
 AppDispatcher.register(function(payload) {
 
   let action = payload.action;
-  let new_item = payload.new_item;
+  let new_item = payload.new_item ? payload.new_item : '';
 
   switch(action) {
     case appConstants.ADD_ITEM:
       Store.addItem(new_item);
+      break;
+    case appConstants.REMOVE_ITEM:
+      Store.removeItem();
       break;
     default:
       return true;

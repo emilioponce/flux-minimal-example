@@ -1,7 +1,8 @@
 var React = require('react');
 var Store = require('../stores/store');
 var AppDispatcher = require('../dispatcher/appDispatcher');
-var NewItemButton = require('./newItemButton');
+var AddItemButton = require('./addItemButton');
+var RemoveItemButton = require('./removeItemButton');
 
 module.exports = React.createClass({
 
@@ -30,8 +31,13 @@ module.exports = React.createClass({
         });
         // returning items of a list: a <li/> with item key & name for every 'items' array position
         return <div>
+          <div>
           <ul>{itemsHtml}</ul>
-          <NewItemButton/>
+          </div>
+          <div>
+          <AddItemButton/>
+          <RemoveItemButton/>
+          </div>
         </div>;
       }
 
