@@ -12,15 +12,12 @@ A javascript package manager (npm) was used for working with dependencies, and G
 
 ### Installation
 
-In a web application server like Apache:
 ```shell
 > git clone https://github.com/emilioponce/flux-minimal-example.git
 > npm install
 > gulp
 > gulp watch
 ```
-
-browse on: http://localhost/flux-minimal-example/
 
 ---
 
