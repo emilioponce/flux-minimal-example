@@ -3,7 +3,6 @@ var appConstants = require('../constants/appConstants');
 
 module.exports = {
   addItem: function(){
-    // triggers add-item action when user clics button
     AppDispatcher.dispatch({
       action: appConstants.ADD_ITEM,
       new_item: {
@@ -13,7 +12,6 @@ module.exports = {
     });
   },
   removeItem: function(){
-    // triggers add-item action when user clics button
     AppDispatcher.dispatch({
       action: appConstants.REMOVE_ITEM
     });

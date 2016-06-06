@@ -17,7 +17,6 @@ AppDispatcher.register(function(payload) {
     case appConstants.REMOVE_ITEM:
       Store.removeItem();
       break;
-    default:
       return true;
   }
 

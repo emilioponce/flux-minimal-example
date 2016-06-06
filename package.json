@@ -40,6 +40,7 @@
     "flux": "^2.1.1",
     "logatim": "^0.4.4",
     "react": "^0.14.7",
+    "react-bootstrap": "^0.29.4",
     "react-dom": "^0.14.7"
   }
 }

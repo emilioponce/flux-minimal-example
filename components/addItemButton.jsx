@@ -13,7 +13,7 @@ module.exports = React.createClass({
 
   render: function(){
     return <form onSubmit={this._createItem}>
-      <button>Add new item</button>
+       <button>Add new item</button>
     </form>;
   }
 

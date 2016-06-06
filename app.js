@@ -9,6 +9,6 @@ log.green.info('Loading...');
 
 ReactDOM.render(<AppRoot />,
   document.getElementById('app-root')
-);
+);  
 
 log.green.info('Done!');
